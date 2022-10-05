@@ -53,23 +53,23 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.operation }}
-    - ${{ inputs.classpath }}
-    - ${{ inputs.changeLogFile }}
-    - ${{ inputs.username }}
-    - ${{ inputs.password }}
-    - ${{ inputs.url }}
-    - ${{ inputs.count }}
-    - ${{ inputs.tag }}
-    - ${{ inputs.date }}
-    - ${{ inputs.referenceUrl }}
-    - ${{ inputs.checksSettingsFile }}
-    - ${{ inputs.proLicenseKey }}
-    - ${{ inputs.hubApiKey }}
-    - ${{ inputs.licenseKey }}
-    - ${{ inputs.databaseChangeLogTableName }}
-    - ${{ inputs.databaseChangeLogLockTableName }}
-branding:
-  icon: database
-  color: red
+#   args:
+#     - ${{ inputs.operation }}
+#     - ${{ inputs.classpath }}
+#     - ${{ inputs.changeLogFile }}
+#     - ${{ inputs.username }}
+#     - ${{ inputs.password }}
+#     - ${{ inputs.url }}
+#     - ${{ inputs.count }}
+#     - ${{ inputs.tag }}
+#     - ${{ inputs.date }}
+#     - ${{ inputs.referenceUrl }}
+#     - ${{ inputs.checksSettingsFile }}
+#     - ${{ inputs.proLicenseKey }}
+#     - ${{ inputs.hubApiKey }}
+#     - ${{ inputs.licenseKey }}
+#     - ${{ inputs.databaseChangeLogTableName }}
+#     - ${{ inputs.databaseChangeLogLockTableName }}
+# branding:
+#   icon: database
+#   color: red
