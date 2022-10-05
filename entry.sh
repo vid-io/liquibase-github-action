@@ -212,10 +212,11 @@ function validate_operation() {
     esac
 }
 
-check_optional_param "$OPERATION" proLicenseKey $PROLICENSEKEY
-check_optional_param "$OPERATION" hubApiKey $HUBAPIKEY
-check_optional_param "$OPERATION" licenseKey $LICENSEKEY
-validate_operation
+# check_optional_param "$OPERATION" proLicenseKey $PROLICENSEKEY
+# check_optional_param "$OPERATION" hubApiKey $HUBAPIKEY
+# check_optional_param "$OPERATION" licenseKey $LICENSEKEY
+# validate_operation
 
 # docker-entrypoint.sh "${PARAMS[@]}" $OPERATION "${VALUES[@]}" "${SECONDPARAMS[@]}"
-docker-entrypoint.sh "$*"
+# docker-entrypoint.sh "$*"
+sh -c "liquibase $*"
